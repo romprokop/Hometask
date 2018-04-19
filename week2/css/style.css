@@ -39,7 +39,7 @@ body {
 	width: 100px;
 	height: 40px;
 	background-color: #404040;
-	transition: all 0.2s;
+	transition: all 0.3s;
 }
 
 .dropbtn {
@@ -54,7 +54,7 @@ body {
 .dropbtn:hover {
 	color: #DBDBDB;
 	background-color: #404040;
-	transition: all 0.2s;
+	transition: all 0.3s;
 }
 .dropdown-content {
 	display: none;
