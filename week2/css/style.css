@@ -1,5 +1,5 @@
 body {
-	background-color: #CFCFCF;
+	background-color: #E9E9E9;
 	color: #4d4d4d;
 	font-family: "Ubuntu", "Open Sans", sans-serif;
 	font-size: 16px;
@@ -8,14 +8,59 @@ body {
 }
 
 .wrapper {
-	max-width: 1200px;
+	background-color: #CFCFCF;
+	max-width: 1100px;
 	width: 100%;
-	padding: 0 40px;
-	margin: 0 auto;
+	padding: 0px 40px;
+	margin: 0px auto;
 }
 
 /* ====== Header ====== */
+.header-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
+.logo {
+	margin: 30px 0px 0px 0px;
+	padding-left: 50px;
+}
+.logo a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	width: 120px;
+	height: 120px;
+	border: 3px solid #404040;
+	border-radius: 50%;
+	color: #404040;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.logo a:hover {
+	background-color: #404040;
+	border-color: #DBDBDB;
+	color: #DBDBDB;
+	transition: all 0.3s;
+
+}
+
+/* ====== Navigation bar with dropdown ====== */
 .navbar {
 	list-style-type: none;
 	margin: 30px 0px 0px 0px;
@@ -82,4 +127,550 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* ====== CSS Grid ====== */
+
+.grid-wrap {
+	padding: 60px 40px ;
+}
+.grid-container {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+
+.grid-item {
+	width: 220px;
+	color: #404040;
+	border: 3px solid #BD0837;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+.grid-item:hover {
+	color: #4D2626;
+	border: 3px solid #CFCFCF;
+	transition: all 0.3s;
+}
+
+/* ====== Sticky Footer ====== */
+
+/*.social {
+	position:fixed;
+	max-width: 1100px;
+	width: 100%;
+	padding: 0px 40px;
+	margin-left: 100px
+	bottom: 0;
+	background-color: red;
+	color: #fff;
+}
+
+.social-link {
+	width: 400px;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+}*/
+
+/* ====== CSS3 Zebra Striping ====== */
+
+.table-zebra {
+	width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.festival {
+	text-align: center;
+	font-size: 40px;
+}
+
+.festival:hover {
+	color: #BD0837;
+	text-align: center;
+	font-size: 40px;
+	transition: all 0.3s;
+}
+
+table {
+	border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 7px;
+}
+
+tr:nth-child(even) {
+	color: #DBDBDB;
+	background-color: #404040;
+}
+
+tr:hover {
+	color: #BD0837;
+	transition: all 0.25s;
+}
+
+/* ====== Button ====== */
+
+button {
+	transition: width 1s;
+	width: 200px;
+	height: 50px;
+	margin: 0px 0px 20px 140px;
+	padding: 0;
+	font-size: 22px;
+	color: #404040;
+	background-color: #DBDBDB;
+	border: 3px solid #404040;
+	border-radius: 20px;
+	outline: 0 !important;
+	cursor: pointer;
+	-ms-align-items: center;
+}
+
+button:hover {
+	color: #BD0837;
+	border: 3px solid #BD0837;
+}
+.wide {
+	width: 820px;
+}
+
+/* ====== Imagine ====== */
+
+.rhcp {
+	position: relative ;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.rhcp img {
+	width: 350px;
+	height: 350px;
+	background-color: #DBDBDB;
+	border: 12px solid #BD0837;
+	border-radius: 50%;
+	padding: 40px;
+}
+
+/* ====== Stitched looks ====== */
+
+.stitched-rhcp{
+	position: relative ;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.stitched-rhcp div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #fff;
+	border: 5px dashed #BD0837;
+	border-radius: 50%;
+	box-shadow: 0 0 0 7px #fff;
+}
+
+/* ====== Corner ribbon ====== */
+
+.corner-ribbon-line {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	width: 300px;
+	height: 50px;
+	background: #BD0837;
+	position: absolute;
+	top: 50px;
+	left: -65px;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: 1px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.ribbon-line {
+	padding-left: 44px;
+}
+
+.ribbon-line a {
+	text-decoration: none;
+	color: #DBDBDB;
+	font-size: 18px;
+}
+
+/* ====== Blurry text ====== */
+
+.shadow-text {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 75px;
+	text-shadow: 0 0 4px #BD0837, 
+				 4px 0 4px #BD0837,
+				 0 4px 4px #BD0837;
+	padding: 25px 0;
+}
+
+/* ====== Speech Bubble ====== */
+
+.bubble {
+   width: 120px; 
+   height: 80px; 
+   background: #DBDBDB;
+   color: #BD0837;
+   position: relative;
+   left:100px;
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border: 5px solid #BD0837;
+   border-radius: 10px;
+}
+.bubble:before {
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 15px solid transparent;
+   border-right: 26px solid #BD0837;
+   border-bottom: 13px solid transparent;
+   margin: 25px 0 0 -27px;
+}
+
+.bubble-text {
+	padding: 25px 0 0 5px;
+}
+
+/* ====== Imagine cross effect ====== */
+
+.cross-effect {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.change-img {
+	width: calc(150px + 150px);
+	height: calc(400px - 100px);
+	background-image: url(../img/Mercedes-Benz-logo-2011-1920x1080.png);
+	background-size: cover;
+}
+
+.change-img:hover {
+
+	background-image: url(../img/Volkswagen-logo-2015-1920x1080.png);
+	background-size: cover;
+	transition: all 0.7s;
+}
+
+/* ====== Style first letter and first line ====== */
+
+.style-text {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.style-text p {
+	margin: 0;
+	font-size: 18px;
+	width: 900px;
+}
+
+.style-text p:first-letter {
+	padding-left: 40px;
+	font-size: 40px;
+	color: #BD0837;
+}
+
+.style-text p:first-line {
+	font-size: 24px;
+	color: #000960;
+}
+
+/* ====== Style first and the last element ====== */
+
+.group-list {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 24px;
+}
+.group-list div:first-child {
+	color: #BD0837;
+	border: 3px solid #BD0837;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.group-list div:last-child {
+	color: #000960;
+	border: 3px solid #000960;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+/* ====== Select elements by attribute ====== */
+
+.attribute-group-list {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 900px;
+	font-size: 25px;
+	padding: 20px 0 0 140px;
+}
+
+.attribute-group-list div {
+	
+}
+
+.attribute-group[data-name="red"] {
+	color: #BD0837;
+	border: 3px solid #BD0837;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.attribute-group[data-name="green"] {
+	color: #005813F2;
+	border: 3px solid #005813F2;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.attribute-group[data-name="blue"] {
+	color: #000960;
+	border: 3px solid #000960;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+/* ====== Set count and insert it before elements ====== */
+
+.count-list {
+	padding: 20px 50px;
+}
+
+.count-list ol {
+	margin: 0;
+	counter-reset: Step; 
+	list-style-type: none;
+	color: #E51837;
+}
+
+.count-list li:before {
+	counter-increment: Step;
+	content: counters(Step,".") " ";
+	
+}
+
+.count-list li {
+	padding-top: 10px;
+}
+
+/* ====== Fixed box sizing ====== */
+
+.box-sizing-fixed-list {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+.box-sizing-list {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	width: 900px;
+}
+
+.fixed-size {
+	width: 220px;
+	height: 100px;
+	background-color: #fff;
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 30px;
+}
+
+.fixed-size.first {
+	border: 15px solid #E51837;
+	border-radius: 25px;
+	padding-top: 18px;
+	color: #E51837;
+}
+
+.fixed-size.second {
+	border: 20px solid #404040;
+	border-radius: 30px;
+	padding-top: 15px;
+}
+
+.fixed-size.third {
+	border: 30px solid #000960;
+	border-radius: 40px;
+	padding-top: 5px;
+	color: #000960;
+}
+
+/* ====== Linear & radial gradients ====== */
+
+.linear-radial-list {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.linear-radial {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	width: 1000px;	
+}
+
+.gradients {
+	width: 170px;
+	height: 70px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 30px;
+	border: 5px solid #404040;
+	border-radius: 15px;
+}
+
+.gradients.linear {
+	background: linear-gradient(to bottom right, rgba(192, 0, 125, 0.4), rgba(255, 255, 0, 1));	
+}
+
+.gradients.radial {
+	background: radial-gradient(#FC4211 10%, #A7F60E 30%, #3D3CF3 60%);	
+}
+
+.gradients.repeating-linear {
+	background: repeating-linear-gradient(45deg, blue 20%, red, #A7F60E 30%);
+}
+
+.gradients.repeating-radial {
+	background: repeating-radial-gradient(#BD0837, #A7F60E 20%, #005813F2 15%);
+}
+
+/* ====== Border image ====== */
+
+.border-image-example {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.photo-with-border img {
+	border: 50px solid transparent;
+	border-image: url(..//img/Decorative-Border-PNG-Clipart.png) 50 50 round;;
+	width: 60%;
+	height: 60%;
+}
+
+/* ====== Columns examples ====== */
+
+
+.columns {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 16px;	
+}
+
+.cols {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 210px;
+	height: 90px;
+	background-color: #fff;
+	text-align: center;
+	border: 5px solid #404040;
+	border-radius: 15px;
+	margin: 0 10px;
+}
+
+/* ====== Link styles ====== */
+
+.link-link {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 30px 0;
+}
+
+.link-link a {
+	font-size: 24px;
+	text-decoration: none;
+	color: #BD0837;
+}
+
+.link-link a:hover {
+	color: #F4C413;
+}
+
+.link-link a:active {
+	color: #13F425;
+}
+
+/* ====== h1 ====== */
+
+.led h1 {
+	margin: 0;
+	text-align: center;
+	padding-bottom: 25px;
 }
