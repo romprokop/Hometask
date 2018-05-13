@@ -3,3 +3,5 @@ logs/
 
 # txt-files
 docs/*.txt
+
+package-lock.json

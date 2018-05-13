@@ -1,0 +1,48 @@
+body {
+	background-color: #7DE606;
+}
+
+.title {
+	color: #FF000BFF;
+	-ms-align-items: center;
+	text-align: center;
+	font-size: 55px;
+	font-weight: 500;
+	padding-bottom: 50px;
+}
+
+.task-5 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 450px;
+}
+.button {
+	width: 180px;
+	height: 50px;
+	font-family: 'Open Sans - Bold', sans-serif;
+	font-size: 22px;
+	color: #B44117FF;
+	background-color: #F4AC0AFF;
+	border: 3px solid #FF000BFF;
+	border-radius: 20px;
+	outline: 0 !important;
+	cursor: pointer;
+}
+
+.button-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 100px;
+}
